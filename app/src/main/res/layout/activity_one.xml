@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sy.myapplication.MainTeam">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:background="@color/colorAccent"
+        android:text="엽기떡볶이"
+        android:textAlignment="center"
+        android:textSize="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="3dp" />
+    //1
+
+    <LinearLayout
+        android:background="@color/BLue"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="98dp">
+
+        <ImageView
+            android:id="@+id/iconItem"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textadress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/address"
+                android:padding="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/call"
+                android:padding="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+    <ImageButton
+
+                android:id="@+id/buttonDialActivity"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="33dp"
+
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@android:drawable/ic_menu_call"
+                android:layout_below="@+id/buttonSecondActivity"
+                android:text=""
+                android:onClick="onClick"/>
+
+
+            </LinearLayout>
+            //전화 폰이미지
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/name"
+                android:padding="4dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="335dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="195dp"
+        android:onClick="onTitleSeleted"></ListView>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
